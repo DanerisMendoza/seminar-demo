@@ -1,0 +1,10 @@
+ionic start demo blank --type vue
+npm install @capacitor/toast
+npm install @capacitor/local-notifications
+npm run build
+ionic cap run android --livereload --external --public-host=192.168.1.5
+ionic capacitor build android
+
+
+//add to manifest
+ <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
